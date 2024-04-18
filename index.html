@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/imgs/foody.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>F O O D Y | Reservation System</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-text">
+            <a href="">Find Your Perfect Place To Eat</a>
+            <a href="" class="btn">Search</a>
+        </div>
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo">
+                <img src="imgs/foody.png" alt="">
+            </a>
+        </div>
+        <div class="topnav">
+            <div class="mega">
+                <a href="#"> <i class="fa-solid fa-map-pin"></i> Get Location</a>
+
+                <div class="dropdown-dr">
+                    <button class="dropbtn">
+                        <i class="bi bi-chevron-down"></i> Choose City
+               </button>
+                    <div class="dropdown-content">
+
+                        <div class="container-fluid">
+                            <div class="column-wrapper row">
+                                <div class="col column">
+                                    <h3 class="col-title">Northeast America <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Boston</a>
+                                    <a href="#">New York</a>
+                                    <a href="#">Washington, DC</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">West America <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Los Angeles</a>
+                                    <a href="#">Portland</a>
+                                    <a href="#">Seattle</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">Europe <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">London</a>
+                                    <a href="#">Madrid</a>
+                                    <a href="#">Paris</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">Middle East <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Dubai</a>
+                                    <a href="#">Katar</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">Asia <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Tokyo</a>
+                                    <a href="#">Singapur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topnav-right">
+                <div class="m-auto">
+                    <button type="button" class="btn searchModal" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
+                         Search <i class="fa-solid fa-magnifying-glass" style="padding-left: 7px; color:#4a4a4a; margin:auto;"></i>
+                    </button>
+
+                    <div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalLabelSearch" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="exampleModalLabelSearch">Please enter the word you want to search and click the search button...</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex">
+                                    <input class="search-input form-control" type="text" placeholder="Search...">
+                                    <button type="button" class="btn search-btn"> <i class="fa-solid fa-magnifying-glass" style="padding-left: 7px; color:#4a4a4a; margin:auto;"></i></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                    <!-- <button type="button" class="btn">Search  <i class="fa-solid fa-magnifying-glass" style="padding-left: 7px; color:#4a4a4a; margin:auto;"></i></button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    En <img src="/imgs/line.png" style="width: 18px; padding-bottom:3px;" alt=""> Tr
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Turkish</a></li>
+                    </ul>
+                </div>
+                <div class="m-auto">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-regular fa-user" style="padding-right: 7px; color:#4a4a4a; margin:auto;"></i> Log In
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <nav>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+
+                                        <div class="log-sign-in nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">Log In</button>
+                                            <button class="nav-link" id="nav-signin-tab" data-bs-toggle="tab" data-bs-target="#nav-signin" type="button" role="tab" aria-controls="nav-signin" aria-selected="false">Sign In</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
+                                            <!-- LOGIN -->
+                                            <form class="loginarea">
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passHelp">
+                                                    <div id="passHelp" class="form-text">Must be 8-20 characters long.</div>
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-text forgot-pass">Forgot Password?</div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin-tab" tabindex="0">
+                                            <form class="loginarea">
+                                                <div class="mb-3">
+                                                    <label for="fName" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="fName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="lastName" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="lastName">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail2" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp2">
+                                                    <div id="emailHelp2" class="form-text">We'll never share your email with anyone else.</div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword2" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" aria-describedby="pass2">
+                                                    <div id="pass2" class="form-text">Must be 8-20 characters long.</div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="telNo" class="form-label">Phone</label>
+                                                    <input type="tel" class="form-control" id="telNo">
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Also got login</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" id="loginbtn" data-bs-dismiss="modal">Log In</button>
+                                    <button type="button" class="btn d-none" id="signinbtn">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="navbar">
+        <form>
+            <div class="container form-alt text-center">
+                <div class="row">
+                    <div class="col">
+                        <!--select location -->
+                        <label for="form-sel">Where To?</label>
+                        <select class="form-select mt-2" id="form-sel" aria-label="Default select example">
+                    <option value="1">Los Angeles</option>
+                    <option value="2">England</option>
+                    <option value="3">Dubai</option>
+                  </select>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="dateInput" class="form-label">When?</label>
+                            <input type="date" class="form-control" id="dateInput">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="dateTime" class="form-label">What Time?</label>
+                            <input type="time" class="form-control" value="16:45" id="dateTime">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="people">
+                            <label for="size" class="form-label">How Many People?</label>
+                            <div class="d-flex justify-content-around inputwrapper">
+                                <button onclick="decrease()" type="button" class="btn btn-md btn-rate minus"><i class="fa-solid fa-minus"></i></button>
+                                <input style="border: 0; text-align:center; background:transparent;" placeholder="1 Person" id="personInput" />
+                                <button onclick="increase()" type="button" class="btn btn-md btn-rate plus"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col btnwrapper">
+                        <button type="button" class="btn w-100">Find It</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+
+
+
+
+
+    </div>
+
+    <div class="content">
+        <div class="container text-center mt-5">
+            <h3 class="mb-4">Why People Love Us</h3>
+            <div class="row justify-content-center">
+                <div class="r-wrapper col-xl-3">
+                    <img src="/imgs/easyaccess128redish.png" width="80" alt="">
+                    <div class="r-text">
+                        <h4 class="mt-3 mb-3">Easy Access</h4>
+                        <p class="r-par">You can quickly find nearby restaurants on your current location</p>
+                    </div>
+                </div>
+                <div class="r-wrapper col-xl-3">
+                    <img src="/imgs/clear-filter128reddish.png" width="80" alt="">
+                    <div class="r-text">
+                        <h4 class="mt-3 mb-3">Filtering Options</h4>
+                        <p class="r-par">You can easily discover the perfect place you desire by filtering restaurants</p>
+                    </div>
+                </div>
+                <div class="r-wrapper col-xl-3">
+                    <img src="/imgs/reviews128reddish.png" width="80" alt="">
+                    <div class="r-text">
+                        <h4 class="mt-3 mb-3">Real-Time Reviews</h4>
+                        <p class="r-par">You can make informed choices by viewing real-time reviews and ratings</p>
+                    </div>
+                </div>
+                <div class="r-wrapper col-xl-3">
+                    <img src="/imgs/notifications128reddish.png" width="80" alt="">
+                    <div class="r-text">
+                        <h4 class="mt-3 mb-3">Exclusive Promotions Alerts</h4>
+                        <p class="r-par">You can receive instant notifications about special offers and discounts</p>
+                    </div>
+                </div>
+                <div class="r-wrapper col-xl-3">
+                    <img src="/imgs/reseasy128reddish.png" width="80" alt="">
+                    <div class="r-text">
+                        <h4 class="mt-3 mb-3">Convenient Reservations</h4>
+                        <p class="r-par">You can make restaurant reservations without the need for waiting</p>
+                    </div>
+                </div>
+                <div class="r-wrapper col-xl-3">
+                    <img src="/imgs/location128reddish.png" width="80" alt="">
+                    <div class="r-text">
+                        <h4 class="mt-3 mb-3">Map Integration</h4>
+                        <p class="r-par">You can visualize restaurant locations on a map and easily navigate to your desired dining destination</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="discover">
+            <div class="container mt-5">
+                <h3 class="text-center disc-title">Discover The Best Of What's Around</h3>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+                        <a href="/detail.html">
+                            <div class="card">
+                                <img src="/imgs/yedi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sandwich Earth</h5>
+                                    <span>İzmir / Karşıyaka</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+                        <a href="/detail.html">
+                            <div class="card">
+                                <img src="/imgs/yedi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Breadli</h5>
+                                    <span>İzmir / Bornova</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+                        <a href="/detail.html">
+                            <div class="card">
+                                <img src="/imgs/yedi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sandwich Earth</h5>
+                                    <span>İzmir / Karşıyaka</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+                        <a href="/detail.html">
+                            <div class="card">
+                                <img src="/imgs/yedi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Breadli</h5>
+                                    <span>İzmir / Bornova</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+                        <a href="/detail.html">
+                            <div class="card">
+                                <img src="/imgs/yedi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sandwich Earth</h5>
+                                    <span>İzmir / Karşıyaka</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+                        <a href="/detail.html">
+                            <div class="card">
+                                <img src="/imgs/yedi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Breadli</h5>
+                                    <span>İzmir / Bornova</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container available-now">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h3 class="main-ava-title">Available for breakfast now in London</h3>
+                    <p>Peace of mind guaranteed with every booking, We promise total transparency.</p>
+                </div>
+                <div class="col-xl-9">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <a href="/detail.html" style="text-decoration: none;">
+                                                <img src="/imgs/yedi.jpg" alt="" class="card-img">
+                                                <div class="card-img-overlay">
+                                                    <h3 class="card-title">Piccolino Caffe</h3>
+                                                    <p class="card-text"><small>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </small></p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <a class="small">8:15</a>
+                                                        <a class="small">11:30</a>
+                                                        <a class="small">17:45</a>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="/detail.html">
+                                            <div class="card">
+                                                <img src="/imgs/yedi.jpg" alt="" class="card-img">
+                                                <div class="card-img-overlay">
+                                                    <h3 class="card-title">Piccolino Caffe</h3>
+                                                    <p class="card-text"><small>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </small></p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <a class="small">8:15</a>
+                                                        <a class="small">11:30</a>
+                                                        <a class="small">17:45</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="/detail.html">
+                                            <div class="card">
+                                                <img src="/imgs/yedi.jpg" alt="" class="card-img">
+                                                <div class="card-img-overlay">
+                                                    <h3 class="card-title">Piccolino Caffe</h3>
+                                                    <p class="card-text"><small>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </small></p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <a class="small">8:15</a>
+                                                        <a class="small">11:30</a>
+                                                        <a class="small">17:45</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="/detail.html">
+                                            <div class="card">
+                                                <img src="/imgs/yedi.jpg" alt="" class="card-img">
+                                                <div class="card-img-overlay">
+                                                    <h3 class="card-title">Piccolino Caffe</h3>
+                                                    <p class="card-text"><small>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </small></p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <a class="small">8:15</a>
+                                                        <a class="small">11:30</a>
+                                                        <a class="small">17:45</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a href="/detail.html">
+                                            <div class="card">
+                                                <img src="/imgs/yedi.jpg" alt="" class="card-img">
+                                                <div class="card-img-overlay">
+                                                    <h3 class="card-title">Piccolino Caffe</h3>
+                                                    <p class="card-text"><small>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </small></p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <a class="small">8:15</a>
+                                                        <a class="small">11:30</a>
+                                                        <a class="small">17:45</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="global-favs">
+
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h3 class="disc-title global-title">Discover The Global Favorite Restaurants</h3>
+                    </div>
+                    <div class="pills-wrapper">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-northamerica-tab" data-bs-toggle="pill" data-bs-target="#v-pills-northamerica" type="button" role="tab" aria-controls="v-pills-northamerica" aria-selected="true">Northeast America</button>
+                            <button class="nav-link" id="v-pills-westamerica-tab" data-bs-toggle="pill" data-bs-target="#v-pills-westamerica" type="button" role="tab" aria-controls="v-pills-westamerica" aria-selected="false">West America</button>
+                            <button class="nav-link" id="v-pills-europe-tab" data-bs-toggle="pill" data-bs-target="#v-pills-europe" type="button" role="tab" aria-controls="v-pills-europe" aria-selected="false">Europe</button>
+                            <button class="nav-link" id="v-pills-middleast-tab" data-bs-toggle="pill" data-bs-target="#v-pills-middleast" type="button" role="tab" aria-controls="v-pills-middleast" aria-selected="false">Middle East</button>
+                            <button class="nav-link" id="v-pills-asia-tab" data-bs-toggle="pill" data-bs-target="#v-pills-asia" type="button" role="tab" aria-controls="v-pills-asia" aria-selected="false">Asia</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-northamerica" role="tabpanel" aria-labelledby="v-pills-northamerica-tab" tabindex="0">
+                                <div class="container-fluid global-cards">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>Boston</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>Boston</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>Boston</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>New York</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>New York</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>Washington, DC</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>Boston</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 mb-3">
+                                            <a href="/detail.html">
+                                                <div class="card">
+                                                    <img src="/imgs/bes.jpg" alt="">
+                                                    <div class="card-img-overlay">
+                                                        <p>Boston</p>
+                                                    </div>
+                                                </div>
+                                                <p class="global-rest-names">Piccolino Cafe</p>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-westamerica" role="tabpanel" aria-labelledby="v-pills-westamerica-tab" tabindex="0">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xl-3">
+                                            1 </div>
+                                        <div class="col-xl-3">2</div>
+                                        <div class="col-xl-3">3</div>
+                                        <div class="col-xl-3">4</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-europe" role="tabpanel" aria-labelledby="v-pills-europe-tab" tabindex="0">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xl-3">
+                                            1 </div>
+                                        <div class="col-xl-3">2</div>
+                                        <div class="col-xl-3">3</div>
+                                        <div class="col-xl-3">4</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-middleast" role="tabpanel" aria-labelledby="v-pills-middleast-tab" tabindex="0">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xl-3">
+                                            1 </div>
+                                        <div class="col-xl-3">2</div>
+                                        <div class="col-xl-3">3</div>
+                                        <div class="col-xl-3">4</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-asia" role="tabpanel" aria-labelledby="v-pills-asia-tab" tabindex="0">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xl-3">
+                                            1 </div>
+                                        <div class="col-xl-3">2</div>
+                                        <div class="col-xl-3">3</div>
+                                        <div class="col-xl-3">4</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="container">
+            <h2 class="text-white text-center" style="font-weight: bold;">What Our Customers Says About Us</h2>
+            <div class="row">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews-wrapper">
+                                <h3>A Culinary Delight</h3>
+                                <p>This restaurant stands out not only for its exquisite dishes but also for its elegant ambiance and attentive service. Every bite feels like a choreographed dance of expertly crafted flavors; it truly offers a gastronomic
+                                    feast that indulges the palate</p>
+                                <span><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews-wrapper">
+                                <h2>A Culinary Delight</h2>
+                                <p>This restaurant stands out not only for its exquisite dishes but also for its elegant ambiance and attentive service. Every bite feels like a choreographed dance of expertly crafted flavors; it truly offers a gastronomic
+                                    feast that indulges the palate</p>
+                                <span><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews-wrapper">
+                                <h2>A Culinary Delight</h2>
+                                <p>This restaurant stands out not only for its exquisite dishes but also for its elegant ambiance and attentive service. Every bite feels like a choreographed dance of expertly crafted flavors; it truly offers a gastronomic
+                                    feast that indulges the palate</p>
+                                <span><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews-wrapper">
+                                <h2>A Culinary Delight</h2>
+                                <p>This restaurant stands out not only for its exquisite dishes but also for its elegant ambiance and attentive service. Every bite feels like a choreographed dance of expertly crafted flavors; it truly offers a gastronomic
+                                    feast that indulges the palate</p>
+                                <span><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews-wrapper">
+                                <h2>A Culinary Delight</h2>
+                                <p>This restaurant stands out not only for its exquisite dishes but also for its elegant ambiance and attentive service. Every bite feels like a choreographed dance of expertly crafted flavors; it truly offers a gastronomic
+                                    feast that indulges the palate</p>
+                                <span><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="container">
+            <h3 class="text-center faq-title">Frequently asked questions</h3>
+            <div class="row">
+                <div class="col-xl-12 faq-wrapper">
+                    <a class="d-flex per-question faq-alt-wrapper justify-content-between gap-1 btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            How does the app determine my current location for finding nearby restaurants? 
+                            <i class="fa-solid angle fa-angles-down"></i>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card-body">
+                            The app utilizes your device's GPS functionality to determine your precise location. It ensures accurate results by accessing location data, allowing you to discover restaurants in close proximity.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 faq-wrapper">
+                    <a class="d-flex per-question faq-alt-wrapper justify-content-between gap-1 btn" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        Can I make reservations directly through the app, and how does this process work?
+                        <i class="fa-solid angle fa-angles-down"></i>
+                    </a>
+
+                    <div class="collapse" id="collapseExample2">
+                        <div class=" card-body">
+                            Yes, you can make reservations within the app. Simply select the desired restaurant, check for availability, and choose your preferred time. The app will then handle the reservation process, providing you with a confirmation and ensuring a hassle-free
+                            dining experience. </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <p class="footer-img"> <img src="/imgs/foody.png"></p>
+                        <!-- <h4>About Us</h4> -->
+                        <p style="text-align: left;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, explicabo. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <h4>More</h4>
+                        <div style="display: flex; flex-direction:column;">
+                            <a href="#" style="text-align: left;">Foody.RS. For IOS</a>
+                            <a href="#" style="text-align: left;">Foody.RS. For Android</a>
+                            <a href="#" style="text-align: left;">Foody.RS. Contact Us</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <h4>Join Us</h4>
+                        <div style="display: flex; flex-direction:column;">
+                            <a href="#" style="text-align: left;">
+                                <span><i class="fab fa-facebook"></i></span> Facebook
+                            </a>
+                            <a href="#" style="text-align: left;">
+                                <span><i class="fa-brands fa-square-instagram"></i></span> Instagram
+                            </a>
+                            <a href="#" style="text-align: left;">
+                                <span>
+                                    <i class="fab fa-linkedin"></i>
+                                </span> Linkedin
+                            </a>
+                            <a href="#" style="text-align: left;">
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                </span> Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <h4>Stay Up To Date</h4>
+                        <p style="text-align: left;">Get latest news, exclusive deals...</p>
+                        <div style="display: flex; flex-direction:column;">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-subs">Subscribe Now</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-alt">
+        <p>Copyright © 2024</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/sashapoulain.js"></script>
+
+</body>
+
+</html>

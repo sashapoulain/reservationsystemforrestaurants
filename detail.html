@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/imgs/foody.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>F O O D Y | Reservation System</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="detail-text-wrapper">
+            <h2 class="det-title">Piccolino Cafe</h2>
+        </div>
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo">
+                <img src="/imgs/foody.png" alt="">
+            </a>
+        </div>
+        <div class="topnav">
+            <div class="mega">
+                <a href="#"> <i class="fa-solid fa-map-pin"></i> Get Location</a>
+
+                <div class="dropdown-dr">
+                    <button class="dropbtn">
+                        <i class="bi bi-chevron-down"></i> Choose City
+               </button>
+                    <div class="dropdown-content">
+                   
+                        <div class="container-fluid">
+                            <div class="column-wrapper row">
+                                <div class="col column">
+                                    <h3 class="col-title">Northeast America <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Boston</a>
+                                    <a href="#">New York</a>
+                                    <a href="#">Washington, DC</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">West America <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Los Angeles</a>
+                                    <a href="#">Portland</a>
+                                    <a href="#">Seattle</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">Europe <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">London</a>
+                                    <a href="#">Madrid</a>
+                                    <a href="#">Paris</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">Middle East <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Dubai</a>
+                                    <a href="#">Katar</a>
+                                </div>
+                                <div class="col column">
+                                    <h3 class="col-title">Asia <i class="fa-solid fa-arrow-right fa-shake"></i></h3>
+                                    <a href="#">Tokyo</a>
+                                    <a href="#">Singapur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topnav-right">
+                <div class="m-auto">
+                    <button type="button" class="btn searchModal" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
+                         Search <i class="fa-solid fa-magnifying-glass" style="padding-left: 7px; color:#4a4a4a; margin:auto;"></i>
+                    </button>
+
+                    <div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalLabelSearch" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="exampleModalLabelSearch">Please enter the word you want to search and click the search button...</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex">
+                                    <input class="search-input form-control" type="text" placeholder="Search...">
+                                    <button type="button" class="btn search-btn"> <i class="fa-solid fa-magnifying-glass" style="padding-left: 7px; color:#4a4a4a; margin:auto;"></i></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                    <!-- <button type="button" class="btn">Search  <i class="fa-solid fa-magnifying-glass" style="padding-left: 7px; color:#4a4a4a; margin:auto;"></i></button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    En <img src="/imgs/line.png" style="width: 18px; padding-bottom:3px;" alt=""> Tr
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Turkish</a></li>
+                    </ul>
+                </div>
+                <div class="m-auto">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-regular fa-user" style="padding-right: 7px; color:#4a4a4a; margin:auto;"></i> Log In
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <nav>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+
+                                        <div class="log-sign-in nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">Log In</button>
+                                            <button class="nav-link" id="nav-signin-tab" data-bs-toggle="tab" data-bs-target="#nav-signin" type="button" role="tab" aria-controls="nav-signin" aria-selected="false">Sign In</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
+                                            <!-- LOGIN -->
+                                            <form class="loginarea">
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passHelp">
+                                                    <div id="passHelp" class="form-text">Must be 8-20 characters long.</div>
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-text forgot-pass">Forgot Password?</div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin-tab" tabindex="0">
+                                            <form class="loginarea">
+                                                <div class="mb-3">
+                                                    <label for="fName" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="fName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="lastName" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="lastName">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail2" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp2">
+                                                    <div id="emailHelp2" class="form-text">We'll never share your email with anyone else.</div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword2" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" aria-describedby="pass2">
+                                                    <div id="pass2" class="form-text">Must be 8-20 characters long.</div>
+
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="telNo" class="form-label">Phone</label>
+                                                    <input type="tel" class="form-control" id="telNo">
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Also got login</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" id="loginbtn" data-bs-dismiss="modal">Log In</button>
+                                    <button type="button" class="btn d-none" id="signinbtn">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="navbar">
+        <form>
+            <div class="container form-alt text-center">
+                <div class="row">
+                    <div class="col">
+                        <label for="form-sel">Where To?</label>
+                        <select class="form-select mt-2" id="form-sel" aria-label="Default select example">
+                    <option value="1">London</option>
+                    <option value="2" disabled>Seattle</option>
+                    <option value="3" disabled>Dubai</option>
+                  </select>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="dateInput" class="form-label">When?</label>
+                            <input type="date" class="form-control" id="dateInput">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="dateTime" class="form-label">What Time?</label>
+                            <input type="time" class="form-control" value="16:45" id="dateTime">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="people">
+                            <label for="size" class="form-label">How Many People?</label>
+                            <div class="d-flex justify-content-around inputwrapper">
+                                <button onclick="decrease()" type="button" class="btn btn-md btn-rate minus"><i class="fa-solid fa-minus"></i></button>
+                                <input style="border: 0; text-align:center; background:transparent;" placeholder="1 Person" id="personInput" />
+                                <button onclick="increase()" type="button" class="btn btn-md btn-rate plus"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col btnwrapper">
+                        <button type="button" class="btn w-100">Reserve</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="content">
+    </div>
+
+    <div class="one-page-route">
+        <div class="container">
+            <a onclick="scrollToSection('aboutus')">About Us</a>
+            <a onclick="scrollToSection('gallery')">Gallery</a>
+            <a onclick="scrollToSection('map')">Map</a>
+            <a onclick="scrollToSection('expect')">What To Expect</a>
+        </div>
+    </div>
+
+    <div class="container content-page-wrapper">
+        <section id="aboutus" class="mb-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-8 p-0">
+                        <h2 class="content-page-title">Introduction</h2>
+                        <p class="content-page-detail">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis minima ducimus asperiores quam harum dolorem reprehenderit nesciunt perferendis voluptatum fugit! Voluptatibus minus laudantium est accusamus, alias harum! Doloribus, recusandae perspiciatis.
+                            Eligendi quos sint magni ex hic quaerat aperiam, accusantium corporis! Voluptas sequi iste distinctio voluptates? Tempore eos tenetur, quod debitis asperiores distinctio illum qui deleniti voluptatibus perspiciatis minima quos
+                            hic.
+                        </p>
+                        <p class="content-page-detail">
+                            Optio eos maiores id facere quas non illum eaque veritatis dignissimos quisquam, necessitatibus commodi. Ad, iusto saepe corrupti earum in recusandae commodi facilis eligendi doloribus dolore voluptates nulla quibusdam ullam. Quos, doloribus mollitia
+                            consectetur tempore minima corrupti nostrum aperiam hic, inventore laborum vitae dolorem. Facilis dignissimos autem nobis perspiciatis pariatur veritatis excepturi, repellat obcaecati voluptate est ipsam quos nesciunt accusamus.
+                            Cumque voluptas odit sapiente nam. Mollitia esse ad corrupti tenetur doloribus. Quae esse doloribus laudantium vitae ipsum reprehenderit numquam doloremque consectetur tempore. Quas magnam magni odit officia, expedita quam
+                            consequuntur. Consectetur eveniet eum ipsa similique! Laboriosam, nesciunt animi, molestiae inventore dolores aperiam voluptatibus vel nihil quam itaque officiis veritatis, hic eos.
+                        </p>
+                        <p class="content-page-detail">
+                            Repudiandae odio quam asperiores harum ut officia ab enim eum, non accusamus natus esse voluptas suscipit iusto tempora et, earum voluptatem? Amet voluptas, porro totam labore ad eius a unde. Asperiores illum quis nisi, velit tempore placeat, ut itaque
+                            ex distinctio culpa blanditiis a quos, dolore at rerum quia ipsa autem ratione voluptatum quisquam esse. Quis laboriosam vero sit dolor! Voluptates neque eveniet soluta asperiores beatae quibusdam tempore, aspernatur ex reprehenderit
+                            quod, voluptate praesentium labore consectetur libero qui animi distinctio enim. Aliquam distinctio magnam, repellat voluptatem ipsam suscipit fuga. Libero.
+                        </p>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card mt-5">
+                            <img src="/imgs/outdoor-seating-restaurant.jpg" alt="">
+                            <div class="card-body">
+                                <!-- social media links -->
+                                <p class="contact-text">You can contact us through the social media links below.</p>
+                                <ul class="social-media">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2 class="mb-3 content-page-title">Our Gallery</h2>
+            <div class="container">
+                <div class="row justify-content-center text-center gy-5">
+                    <div class="swiper mySwipergal" style="padding-left: 0;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery1.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery2.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery2.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery3.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery3.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery1.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery1.jpg" alt="" />
+                                </a>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery1.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery1.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/imgs/gallery1.jpg" data-fancybox="gallery" data-caption="Başlık #1">
+                                    <img src="/imgs/gallery1.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid content-page-wrapper p-0">
+        <section id="map">
+            <h2 class="content-page-title mb-3 text-center">You can find us on the map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200065.48497177276!2d26.914909799315247!3d38.41782866400518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd862a762cacd%3A0x628cbba1a59ce8fe!2zxLB6bWly!5e0!3m2!1str!2str!4v1704466331389!5m2!1str!2str"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+
+
+    <div class="container content-page-wrapper">
+        <section id="expect">
+            <h2 class="content-page-title mb-3 text-center" style="font-size: 2rem;">What To Expect</h2>
+            <div class="row expect-alt-wrapper">
+                <div class="col-xl-4">
+                    <h4>Time and Space Efficiency</h4>
+                    <p> <span class="fa fa-check me-2"></span> A restaurant reservation system helps customers efficiently plan their time by allowing them to view the availability of tables on their desired date and time.</p>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Advance Planning Opportunity</h4>
+                    <p> <span class="fa fa-check me-2"></span> The website enables customers to make reservations in advance, reducing wait times at popular restaurants and ensuring a guaranteed table on special occasions.</p>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Personalized Experience</h4>
+                    <p> <span class="fa fa-check me-2"></span> The reservation system captures and remembers customers' specific preferences and requests, providing them with a personalized dining experience during each visit.</p>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Quick and Easy Process</h4>
+                    <p> <span class="fa fa-check me-2"></span> A user-friendly reservation system allows customers to quickly make and modify reservations, streamlining the entire booking process.</p>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Increased Customer Loyalty</h4>
+                    <p> <span class="fa fa-check me-2"></span> Rewarding regular customers with points or special offers through the reservation system can enhance customer loyalty over time.</p>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Data Analysis Capability</h4>
+                    <p> <span class="fa fa-check me-2"></span> The reservation system provides restaurant owners with access to data such as customer preferences, reservation trends, and performance analysis, enabling them to better optimize their business
+                        strategies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <p class="footer-img"> <img src="/imgs/foody.png"></p>
+                        <p style="text-align: left;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, explicabo. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <h4>More</h4>
+                        <div style="display: flex; flex-direction:column;">
+                            <a href="#" style="text-align: left;">Foody.RS. For IOS</a>
+                            <a href="#" style="text-align: left;">Foody.RS. For Android</a>
+                            <a href="#" style="text-align: left;">Foody.RS. Contact Us</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <h4>Join Us</h4>
+                        <div style="display: flex; flex-direction:column;">
+                            <a href="#" style="text-align: left;">
+                                <span><i class="fab fa-facebook"></i></span> Facebook
+                            </a>
+                            <a href="#" style="text-align: left;">
+                                <span><i class="fa-brands fa-square-instagram"></i></span> Instagram
+                            </a>
+                            <a href="#" style="text-align: left;">
+                                <span>
+                                    <i class="fab fa-linkedin"></i>
+                                </span> Linkedin
+                            </a>
+                            <a href="#" style="text-align: left;">
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                </span> Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 mb-3">
+                    <div class="first-footer-part">
+                        <h4>Stay Up To Date</h4>
+                        <p style="text-align: left;">Get latest news, exclusive deals...</p>
+                        <div style="display: flex; flex-direction:column;">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-subs">Subscribe Now</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-alt">
+        <p>Copyright © 2024</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/sashapoulain.js"></script>
+
+  
+</body>
+
+</html>
